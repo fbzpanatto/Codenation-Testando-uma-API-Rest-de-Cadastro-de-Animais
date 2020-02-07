@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-0",
+  "version": "1.0.0",
+  "description": "Criamos um CRUD (Create, Read, Update e Delete) para gerenciamento de uma listagem de animais. Como sabemos, testes automatizados são um dos fundamentos na construção de aplicações confiáveis. Por isso, precisamos que você aumente a qualidade e consistência da nossa API, aumentando a cobertura de testes de integração dela.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest test/server.test.js",
+    "test:coverage": "jest test/server.test.js --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": []
+}
